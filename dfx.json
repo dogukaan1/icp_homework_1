@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "icp_hw1_backend": {
+      "candid": "src/icp_hw1_backend/icp_hw1_backend.did",
+      "package": "icp_hw1_backend",
+      "type": "rust"
+    },
+    "icp_hw1_frontend": {
+      "dependencies": [
+        "icp_hw1_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/icp_hw1_frontend/src/index.html"
+      },
+      "source": [
+        "src/icp_hw1_frontend/assets",
+        "dist/icp_hw1_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

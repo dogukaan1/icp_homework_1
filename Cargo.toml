@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/icp_hw1_backend",
+]
